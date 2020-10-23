@@ -1,0 +1,26 @@
+*, html, body{
+    box-sizing: border-box;
+}
+
+input{
+    font-size: 1rem;
+}
+
+nav{
+
+}
+
+.row_cart{
+    width: 100px;
+}
+
+.error_block{
+    background: red;
+}
+
+
+.li_bloc{
+    display: flex;
+    width: 100px;
+}
+
