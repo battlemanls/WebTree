@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Controller Class
+ *
+ * core
+ *
+ */
+
+
 class Controller{
 
     public $model;

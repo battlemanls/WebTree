@@ -1,9 +1,15 @@
 <?php
 
+/**
+ * Route Class
+ *
+ * core
+ *
+ */
+
 class Route{
 
     static function start(){
-
         //параметры по умолчанию
         $controller_name = 'Main';
         $action_name = 'index';

@@ -21,6 +21,83 @@ nav{
 
 .li_bloc{
     display: flex;
-    width: 100px;
+    width: auto;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.ul_tree{
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
+
+.li_bloc{
+    margin: 5px;
+    background: #dcdbdb;
+    border-radius: 5px;
+}
+
+.li_bloc>div{
+    padding: 0 2px
+}
+
+.add_r, .sub_r, #root{
+    display: block;
+    text-align: center;
+    color: black;
+    border-radius: 3px;
+    width: 30px;
+}
+
+.add_r{
+    background: #63de63;
+}
+
+.sub_r, #root{
+    background: #f55151;
+}
+
+.add_r:hover, .sub_r:hover{
+
+    background: white;
+}
+
+.root{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+#create_root{
+    display: block;
+
+    margin: auto;
+    text-decoration: none;
+}
